@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ExcelAddInTest.Views.PromptSettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/ExcelAddInTest;component/Resources/Brushes.xaml" />
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Expander
+                  Header="OpenAI Api Key" 
+                  ExpandDirection="Down" 
+                  IsExpanded="False"
+                  Background="Azure"
+                  Margin="10 10 10 0">
+            <WrapPanel Orientation="Horizontal">
+                <Label Margin="5">OpenAI API key:</Label>
+                <TextBox Width="400" x:Name="TxtApiKey" Text="{Binding ApiKey}" Margin="5" />
+                <Button Width="50" Background="{StaticResource BlueBrush}" 
+                        x:Name="BtnSaveApiKey" Margin="5"
+                        FontSize="14" 
+                        Command="{Binding SaveCommand}">Save</Button>
+            </WrapPanel>
+        </Expander>
+    </Grid>
+</UserControl>

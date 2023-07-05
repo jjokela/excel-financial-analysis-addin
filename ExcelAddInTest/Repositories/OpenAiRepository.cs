@@ -18,7 +18,9 @@ namespace ExcelAddInTest.Repositories
             // needed :(
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
+            // TODO: pass prompt as parameter, as well as model, temperature and other options
             var prompt =
+                "You are an expert financial analyst." +
                 "Analyze the following income statement data:" +
                 $"{data}" +
                 "What are some key insights and trends from this data?";

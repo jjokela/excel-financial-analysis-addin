@@ -63,10 +63,6 @@ namespace ExcelAddInTest.ViewModels
                 IsLoading = false;
                 AnalysisText = analysis;
             }
-            catch
-            {
-                throw;
-            }
             finally
             {
                 IsLoading = false;
@@ -75,6 +71,7 @@ namespace ExcelAddInTest.ViewModels
 
         public async Task<string> GetAnalysisAsync(string input)
         {
+            // TODO change this
             var apiKey = Properties.Settings.Default.ApiKey;
             var analysis = await OpenAiRepository.GetAnalysis(input, apiKey);
             return analysis;

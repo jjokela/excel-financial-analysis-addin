@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:views="clr-namespace:ExcelAddInTest.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -23,21 +24,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
-        <Expander Grid.Row="0"
-                  Header="OpenAI Api Key" 
-                  ExpandDirection="Down" 
-                  IsExpanded="False"
-                  Background="Azure"
-                  Margin="10 10 10 0">
-            <WrapPanel Orientation="Horizontal">
-                <Label Margin="5">OpenAI API key:</Label>
-                <TextBox Width="400" x:Name="TxtApiKey" Margin="5" />
-                <Button Width="50" Background="{StaticResource BlueBrush}" 
-                        x:Name="BtnSaveApiKey" Margin="5"
-                        FontSize="14" Click="BtnSaveApiKey_OnClick">Save</Button>
-            </WrapPanel>
-        </Expander>
+        <views:PromptSettingsView Grid.Row="0"/>
         <TextBox Grid.Row="1" x:Name="TxtRangeOutput" 
                  Margin="10" 
                  TextWrapping="Wrap"
