@@ -1,4 +1,5 @@
-﻿using Microsoft.Office.Tools.Ribbon;
+﻿using Microsoft.Office.Core;
+using Microsoft.Office.Tools.Ribbon;
 
 namespace ExcelAddInTest.Controls
 {
@@ -6,7 +7,8 @@ namespace ExcelAddInTest.Controls
     {
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {
-
+            button1.ShowImage = true;
+            button1.ControlSize = RibbonControlSize.RibbonControlSizeLarge;
         }
 
         private void button1_Click(object sender, RibbonControlEventArgs e)
