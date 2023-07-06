@@ -1,10 +1,13 @@
 ﻿using ExcelAddInTest.Command;
+using ExcelAddInTest.Repositories;
 
 namespace ExcelAddInTest.ViewModels
 {
     public class PromptSettingsViewModel : ViewModelBase
     {
         private string _apiKey;
+        private string _promptTemplate;
+        private readonly SettingsRepository _settingsRepository = new SettingsRepository();
         public DelegateCommand SaveCommand { get; set; }
 
         public PromptSettingsViewModel()
@@ -13,9 +16,10 @@ namespace ExcelAddInTest.ViewModels
 
             // Load the API key from settings when the control loads
             ApiKey = Properties.Settings.Default.ApiKey;
+            PromptTemplate = Properties.Settings.Default.PromptTemplate;
         }
 
-        private bool CanSave(object arg) => !string.IsNullOrEmpty(ApiKey);
+        private bool CanSave(object arg) => !string.IsNullOrEmpty(ApiKey) && !string.IsNullOrEmpty(PromptTemplate);
 
         public string ApiKey
         {
@@ -28,10 +32,20 @@ namespace ExcelAddInTest.ViewModels
             }
         }
 
+        public string PromptTemplate
+        {
+            get => _promptTemplate;
+            set
+            {
+                _promptTemplate = value;
+                RaisePropertyChanged();
+                SaveCommand.RaiseCanExecuteChanged();
+            }
+        }
+
         private void Save(object obj)
         {
-            Properties.Settings.Default.ApiKey = ApiKey;
-            Properties.Settings.Default.Save();
+            _settingsRepository.Save(ApiKey, PromptTemplate);
         }
     }
 }

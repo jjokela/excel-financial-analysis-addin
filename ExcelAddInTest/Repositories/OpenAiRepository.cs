@@ -8,24 +8,28 @@ namespace ExcelAddInTest.Repositories
 {
     public class OpenAiRepository
     {
-        public static async Task<string> GetAnalysis(string data, string apiKey)
+        private const string DataPlaceholder = "<<DATA>>";
+
+        public static async Task<string> GetAnalysis(string data, string apiKey, string promptTemplate)
         {
             if (string.IsNullOrEmpty(apiKey))
             {
                 throw new ArgumentNullException(nameof(apiKey));
             }
-            
+
+            if (string.IsNullOrWhiteSpace(promptTemplate))
+            {
+                throw new ArgumentNullException(nameof(promptTemplate));
+            }
+
+            var prompt = promptTemplate.Replace(DataPlaceholder, data);
+
             // needed :(
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-            // TODO: pass prompt as parameter, as well as model, temperature and other options
-            var prompt =
-                "You are an expert financial analyst." +
-                "Analyze the following income statement data:" +
-                $"{data}" +
-                "What are some key insights and trends from this data?";
-
             var client = new OpenAIClient(apiKey, new OpenAIClientOptions());
+
+            // TODO: pass options as params
             var chatCompletionsOptions = new ChatCompletionsOptions
             {
                 Messages =

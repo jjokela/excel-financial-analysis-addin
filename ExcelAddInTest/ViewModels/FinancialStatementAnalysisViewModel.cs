@@ -73,7 +73,8 @@ namespace ExcelAddInTest.ViewModels
         {
             // TODO change this
             var apiKey = Properties.Settings.Default.ApiKey;
-            var analysis = await OpenAiRepository.GetAnalysis(input, apiKey);
+            var promptTemplate = Properties.Settings.Default.PromptTemplate;
+            var analysis = await OpenAiRepository.GetAnalysis(input, apiKey, promptTemplate);
             return analysis;
         }
 

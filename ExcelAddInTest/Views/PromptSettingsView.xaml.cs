@@ -1,6 +1,4 @@
-﻿using System.Windows;
-using System.Windows.Controls;
-using ExcelAddInTest.ViewModels;
+﻿using ExcelAddInTest.ViewModels;
 
 namespace ExcelAddInTest.Views
 {

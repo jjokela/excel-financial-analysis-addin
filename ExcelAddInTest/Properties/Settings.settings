@@ -5,5 +5,11 @@
     <Setting Name="ApiKey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="PromptTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">You are an expert financial analyst.
+Analyze the following income statement data:
+&lt;&lt;DATA&gt;&gt;
+What are some key insights and trends from this data?</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

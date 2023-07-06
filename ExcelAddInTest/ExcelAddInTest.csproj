@@ -283,6 +283,7 @@
     <Compile Include="Controls\WinFormsContainer.Designer.cs">
       <DependentUpon>WinFormsContainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\SettingsRepository.cs" />
     <Compile Include="Views\PromptSettingsView.xaml.cs">
       <DependentUpon>PromptSettingsView.xaml</DependentUpon>
     </Compile>
