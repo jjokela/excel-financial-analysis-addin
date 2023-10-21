@@ -14,7 +14,7 @@
             </ResourceDictionary>
         </Grid.Resources>
         <Expander
-                  Header="OpenAI Api Key" 
+                  Header="API key and settings" 
                   ExpandDirection="Down" 
                   IsExpanded="False"
                   Background="Azure"
@@ -31,10 +31,10 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Margin="5" Grid.Column="0">OpenAI API key:</Label>
-                <TextBox x:Name="TxtApiKey" Text="{Binding ApiKey}" Margin="5" Grid.Column="1"/>
+                <TextBox x:Name="TxtApiKey" Text="{Binding ApiKey, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="1"/>
                 <Label Margin="5" Grid.Row="1" Grid.Column="0">Prompt template:</Label>
                 <TextBox x:Name="TxtPromptTemplate" 
-                         Text="{Binding PromptTemplate}" 
+                         Text="{Binding PromptTemplate, UpdateSourceTrigger=PropertyChanged}" 
                          Margin="5" 
                          TextWrapping="Wrap"
                          AcceptsReturn="True"

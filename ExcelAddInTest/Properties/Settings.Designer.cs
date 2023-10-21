@@ -37,7 +37,7 @@ namespace ExcelAddInTest.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("You are an expert financial analyst.\r\nAnalyze the following income statement data" +
+        [global::System.Configuration.DefaultSettingValueAttribute("You are an expert financial analyst.\r\nAnalyze the following financial statement data" +
             ":\r\n<<DATA>>\r\nWhat are some key insights and trends from this data?")]
         public string PromptTemplate {
             get {

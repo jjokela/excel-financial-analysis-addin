@@ -71,7 +71,6 @@ namespace ExcelAddInTest.ViewModels
 
         public async Task<string> GetAnalysisAsync(string input)
         {
-            // TODO change this
             var apiKey = Properties.Settings.Default.ApiKey;
             var promptTemplate = Properties.Settings.Default.PromptTemplate;
             var analysis = await OpenAiRepository.GetAnalysis(input, apiKey, promptTemplate);
