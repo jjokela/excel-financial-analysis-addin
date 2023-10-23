@@ -34,6 +34,12 @@ You need:
 
   ![copy_to_excel_cell](https://github.com/jjokela/wpf-vsto/assets/4481783/e1d50d38-a943-409d-b4a3-a46be97d2602)
 
+## Uninstalling
+- You can uninstall the add-in from Windows' installed apps:
+
+  ![image](https://github.com/jjokela/wpf-vsto/assets/4481783/9e180410-898e-4fd4-b00f-989f6ca763cf)
+
+
 ## Tech stack
 - A VSTO add-in written in C#, using .NET Framework 4.8. Yes, it's ancient, but unfortunately the most recent version work with VSTO add-ins.
 - Model used: gpt-3.5-turbo
