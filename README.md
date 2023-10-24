@@ -13,8 +13,18 @@ You need:
 ![openai key](https://github.com/jjokela/wpf-vsto/assets/4481783/d3b23ab0-d02f-4522-93b8-1fd534ddee06)
 - Desktop version of Excel
 
+## Installation
+- Download the add-in from Releases (or click [here]([https://duckduckgo.com](https://github.com/jjokela/wpf-vsto/releases/download/v1.0.0.7/Application.Files.zip)). You can also build the solution and publish the add-in to create your own installer.
+- **Important!** This add-in is signed using a self-signed certificate, since the commercial ones from trusted authorities are expensive, and this is more of a technology demo and not a commercial product. If you want to install it this way, you need to right-click the downloaded zip file, select Properties, and tick the `Unblock` checkbox and finally click OK. Otherwise, installer will complain that the certificate is not trusted, and does not proceed further.
+
+![image](https://github.com/jjokela/wpf-vsto/assets/4481783/446c7491-0572-411f-a15c-d87dfd394cf9)
+
+- Unzip the zip file, and run `Setup.exe`. This will install the add-in.
+- Alternatively, you can create your own installer by publishing the project via Visual Studio or command line.
+- You can also the solution from Visual Studio, this will start both Excel and add-in.
+
+
 ## Usage
-- Download and install the add-in from Releases. You can also build the solution and publish the add-in to create your own installer.
 - Open Excel and open the add-in from the ribbon:
 
   ![addins_bar](https://github.com/jjokela/wpf-vsto/assets/4481783/0197c911-e83c-4f85-a46a-90534a95fecb)
