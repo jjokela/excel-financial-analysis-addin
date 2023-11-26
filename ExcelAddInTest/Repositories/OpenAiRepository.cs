@@ -36,11 +36,11 @@ namespace ExcelAddInTest.Repositories
                 {
                     new ChatMessage(ChatRole.User, prompt),
                 },
-                Temperature = 0
+                Temperature = 0,
+                DeploymentName = "gpt-3.5-turbo"
             };
 
             var response = await client.GetChatCompletionsAsync(
-                deploymentOrModelName: "gpt-3.5-turbo",
                 chatCompletionsOptions);
 
             var chatCompletions = response.Value;
