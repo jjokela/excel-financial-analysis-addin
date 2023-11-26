@@ -7,7 +7,9 @@ namespace ExcelAddInTest.ViewModels
     {
         private string _apiKey;
         private string _promptTemplate;
+        private string _modelName;
         private readonly SettingsRepository _settingsRepository = new SettingsRepository();
+
         public DelegateCommand SaveCommand { get; set; }
 
         public PromptSettingsViewModel()
@@ -17,6 +19,7 @@ namespace ExcelAddInTest.ViewModels
             // Load the API key from settings when the control loads
             ApiKey = Properties.Settings.Default.ApiKey;
             PromptTemplate = Properties.Settings.Default.PromptTemplate;
+            ModelName = Properties.Settings.Default.ModelName;
         }
 
         private bool CanSave(object arg) => !string.IsNullOrEmpty(ApiKey) && !string.IsNullOrEmpty(PromptTemplate);
@@ -43,9 +46,20 @@ namespace ExcelAddInTest.ViewModels
             }
         }
 
+        public string ModelName
+        {
+            get => _modelName;
+            set
+            {
+                _modelName = value;
+                RaisePropertyChanged();
+                SaveCommand.RaiseCanExecuteChanged();
+            }
+        }
+
         private void Save(object obj)
         {
-            _settingsRepository.Save(ApiKey, PromptTemplate);
+            _settingsRepository.Save(ApiKey, PromptTemplate, ModelName);
         }
     }
 }

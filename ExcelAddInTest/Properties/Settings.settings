@@ -11,5 +11,8 @@ Analyze the following income statement data:
 &lt;&lt;DATA&gt;&gt;
 What are some key insights and trends from this data?</Value>
     </Setting>
+    <Setting Name="ModelName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gpt-3.5-turbo</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

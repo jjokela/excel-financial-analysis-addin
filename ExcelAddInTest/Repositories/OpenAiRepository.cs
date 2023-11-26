@@ -10,7 +10,7 @@ namespace ExcelAddInTest.Repositories
     {
         private const string DataPlaceholder = "<<DATA>>";
 
-        public static async Task<string> GetAnalysis(string data, string apiKey, string promptTemplate)
+        public static async Task<string> GetAnalysis(string data, string apiKey, string promptTemplate, string modelName)
         {
             if (string.IsNullOrEmpty(apiKey))
             {
@@ -29,7 +29,6 @@ namespace ExcelAddInTest.Repositories
 
             var client = new OpenAIClient(apiKey, new OpenAIClientOptions());
 
-            // TODO: pass options as params
             var chatCompletionsOptions = new ChatCompletionsOptions
             {
                 Messages =
@@ -37,7 +36,7 @@ namespace ExcelAddInTest.Repositories
                     new ChatMessage(ChatRole.User, prompt),
                 },
                 Temperature = 0,
-                DeploymentName = "gpt-3.5-turbo"
+                DeploymentName = modelName
             };
 
             var response = await client.GetChatCompletionsAsync(
