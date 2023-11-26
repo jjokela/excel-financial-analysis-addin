@@ -52,7 +52,7 @@ You need:
 
 ## Tech stack
 - A VSTO add-in written in C#, using .NET Framework 4.8. Yes, it's ancient, but unfortunately the most recent version work with VSTO add-ins.
-- Model used: gpt-3.5-turbo
+- Models available used: gpt-3.5-turbo, gpt-4 and gpt-4-1106-preview
 
 ## Privacy
 What data is gatherend and sent, and where?

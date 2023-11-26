@@ -1,5 +1,6 @@
 ﻿using ExcelAddInTest.Command;
 using ExcelAddInTest.Repositories;
+using System.Collections.ObjectModel;
 
 namespace ExcelAddInTest.ViewModels
 {
@@ -7,7 +8,7 @@ namespace ExcelAddInTest.ViewModels
     {
         private string _apiKey;
         private string _promptTemplate;
-        private string _modelName;
+        private string _selectedModel;
         private readonly SettingsRepository _settingsRepository = new SettingsRepository();
 
         public DelegateCommand SaveCommand { get; set; }
@@ -19,7 +20,7 @@ namespace ExcelAddInTest.ViewModels
             // Load the API key from settings when the control loads
             ApiKey = Properties.Settings.Default.ApiKey;
             PromptTemplate = Properties.Settings.Default.PromptTemplate;
-            ModelName = Properties.Settings.Default.ModelName;
+            SelectedModel = Properties.Settings.Default.ModelName;
         }
 
         private bool CanSave(object arg) => !string.IsNullOrEmpty(ApiKey) && !string.IsNullOrEmpty(PromptTemplate);
@@ -46,12 +47,19 @@ namespace ExcelAddInTest.ViewModels
             }
         }
 
-        public string ModelName
+        public ObservableCollection<string> Models { get; } = new ObservableCollection<string>
         {
-            get => _modelName;
+            "gpt-4-1106-preview",
+            "gpt-4",
+            "gpt-3.5-turbo"
+        };
+
+        public string SelectedModel
+        {
+            get => _selectedModel;
             set
             {
-                _modelName = value;
+                _selectedModel = value;
                 RaisePropertyChanged();
                 SaveCommand.RaiseCanExecuteChanged();
             }
@@ -59,7 +67,7 @@ namespace ExcelAddInTest.ViewModels
 
         private void Save(object obj)
         {
-            _settingsRepository.Save(ApiKey, PromptTemplate, ModelName);
+            _settingsRepository.Save(ApiKey, PromptTemplate, SelectedModel);
         }
     }
 }

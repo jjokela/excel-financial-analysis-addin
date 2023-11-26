@@ -24,6 +24,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -31,8 +32,14 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Margin="5" Grid.Column="0">OpenAI API key:</Label>
-                <TextBox x:Name="TxtApiKey" Text="{Binding ApiKey, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="1"/>
-                <Label Margin="5" Grid.Row="1" Grid.Column="0">Prompt template:</Label>
+                <TextBox Grid.Row="0" x:Name="TxtApiKey" Text="{Binding ApiKey, UpdateSourceTrigger=PropertyChanged}" Margin="5" Grid.Column="1"/>
+
+                <Label Grid.Row="1"  Margin="5" Grid.Column="0">OpenAI API key:</Label>
+                <ComboBox x:Name="CbmModels" Grid.Row="1" Grid.Column="1" Margin="5"
+                                      ItemsSource="{Binding Models}" 
+                                      SelectedItem="{Binding SelectedModel, Mode=TwoWay}"/>
+
+                <Label Margin="5" Grid.Row="2" Grid.Column="0">Prompt template:</Label>
                 <TextBox x:Name="TxtPromptTemplate" 
                          Text="{Binding PromptTemplate, UpdateSourceTrigger=PropertyChanged}" 
                          Margin="5" 
@@ -40,12 +47,12 @@
                          AcceptsReturn="True"
                          Height="100"
                          VerticalScrollBarVisibility="Visible" 
-                         Grid.Row="1" Grid.Column="1"/>
+                         Grid.Row="2" Grid.Column="1"/>
                 <Button Background="{StaticResource BlueBrush}" 
                         x:Name="BtnSaveApiKey" Margin="5"
                         FontSize="14" 
                         Command="{Binding SaveCommand}"
-                        Grid.Row="2" Grid.Column="2">Save</Button>
+                        Grid.Row="3" Grid.Column="0">Save</Button>
             </Grid>
         </Expander>
     </Grid>
