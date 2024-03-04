@@ -232,12 +232,7 @@
   -->
   <ItemGroup>
     <Compile Include="Command\DelegateCommand.cs" />
-    <Compile Include="Controls\Ribbon.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\Ribbon.Designer.cs">
-      <DependentUpon>Ribbon.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Controls\MyRibbon.cs" />
     <Compile Include="Controls\WinFormsContainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,9 +251,6 @@
     <Compile Include="Views\PromptSettingsView.xaml.cs">
       <DependentUpon>PromptSettingsView.xaml</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Controls\Ribbon.resx">
-      <DependentUpon>Ribbon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\WinFormsContainer.resx">
       <DependentUpon>WinFormsContainer.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +289,7 @@
     <None Include="WordAddInTest_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\MyRibbon.xml" />
     <Content Include="Images\fa_logo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -321,10 +314,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>WordAddInTest_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B36E1DF99753848FCB7F9A5ABE192A92EB19D934</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>1983A58D81147BF456745DD85A0F60598A0D1A4B</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
