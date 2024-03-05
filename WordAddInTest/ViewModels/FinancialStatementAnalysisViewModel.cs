@@ -81,35 +81,42 @@ namespace WordAddInTest.ViewModels
 
         public void GetText(object parameter)
         {
+            Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+
+            AnalysisText = currentRange.Text;
+
             //if (_model.Selection is Word.Range selectedRange)
             //{
             //    var output = new StringBuilder();
 
-            //    for (var row = 1; row <= selectedRange.Rows.Count; row++)
-            //    {
-            //        var cells = new List<string>();
+                //    for (var row = 1; row <= selectedRange.Rows.Count; row++)
+                //    {
+                //        var cells = new List<string>();
 
-            //        for (var col = 1; col <= selectedRange.Columns.Count; col++)
-            //        {
-            //            if (selectedRange.Cells[row, col] != null && selectedRange.Cells[row, col].Value != null)
-            //            {
-            //                cells.Add(selectedRange.Cells[row, col].Value.ToString().Trim());
-            //            }
-            //        }
+                //        for (var col = 1; col <= selectedRange.Columns.Count; col++)
+                //        {
+                //            if (selectedRange.Cells[row, col] != null && selectedRange.Cells[row, col].Value != null)
+                //            {
+                //                cells.Add(selectedRange.Cells[row, col].Value.ToString().Trim());
+                //            }
+                //        }
 
-            //        // Only add a new line if there were any cells with values
-            //        if (cells.Count > 0)
-            //        {
-            //            output.AppendLine(string.Join(";", cells));
-            //        }
-            //    }
+                //        // Only add a new line if there were any cells with values
+                //        if (cells.Count > 0)
+                //        {
+                //            output.AppendLine(string.Join(";", cells));
+                //        }
+                //    }
 
-            //    AnalysisText = output.ToString();
-            //}
+                //    AnalysisText = output.ToString();
+                //}
         }
 
         public void SetAnalysis(object obj)
         {
+            Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+            currentRange.Text = AnalysisText;
+
             //if (_model.Selection is Word.Range selectedRange)
             //{
             //    var rows = AnalysisText.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
