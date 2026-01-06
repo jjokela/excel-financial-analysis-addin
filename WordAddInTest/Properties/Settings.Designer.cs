@@ -12,7 +12,11 @@ namespace WordAddInTest.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.0.0")]
+=======
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -22,5 +26,45 @@ namespace WordAddInTest.Properties {
                 return defaultInstance;
             }
         }
+<<<<<<< HEAD
+=======
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ApiKey {
+            get {
+                return ((string)(this["ApiKey"]));
+            }
+            set {
+                this["ApiKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("You are an expert financial analyst.\r\nAnalyze the following income statement data" +
+            ":\r\n<<DATA>>\r\nWhat are some key insights and trends from this data?")]
+        public string PromptTemplate {
+            get {
+                return ((string)(this["PromptTemplate"]));
+            }
+            set {
+                this["PromptTemplate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("gpt-3.5-turbo")]
+        public string ModelName {
+            get {
+                return ((string)(this["ModelName"]));
+            }
+            set {
+                this["ModelName"] = value;
+            }
+        }
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     }
 }

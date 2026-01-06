@@ -21,7 +21,11 @@
     <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{8C2CBC1F-8C19-404F-AB83-6A8FCF309608}</ProjectGuid>
+=======
+    <ProjectGuid>{43638A0C-0E74-4A15-8E88-57028D23B180}</ProjectGuid>
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>WordAddInTest</RootNamespace>
@@ -101,15 +105,71 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
+<<<<<<< HEAD
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+=======
+    <Reference Include="Azure.AI.OpenAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.AI.OpenAI.1.0.0-beta.9\lib\netstandard2.0\Azure.AI.OpenAI.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Core, Version=1.36.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Core.1.36.0\lib\net472\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.1\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=1.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.Data.1.0.2\lib\net461\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+<<<<<<< HEAD
+=======
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -185,10 +245,15 @@
     can be found.
   -->
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Controls\Ribbon.cs" />
     <Compile Include="Controls\Ribbon.Designer.cs">
       <DependentUpon>Ribbon.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="Command\DelegateCommand.cs" />
+    <Compile Include="Controls\MyRibbon.cs" />
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <Compile Include="Controls\WinFormsContainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,9 +263,21 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="Controls\Ribbon.resx">
       <DependentUpon>Ribbon.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="ViewModels\FinancialStatementAnalysisViewModel.cs" />
+    <Compile Include="ViewModels\PromptSettingsViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\FinancialStatementAnalysisView.xaml.cs">
+      <DependentUpon>FinancialStatementAnalysisView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PromptSettingsView.xaml.cs">
+      <DependentUpon>PromptSettingsView.xaml</DependentUpon>
+    </Compile>
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <EmbeddedResource Include="Controls\WinFormsContainer.resx">
       <DependentUpon>WinFormsContainer.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +290,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <None Include="app.config" />
+    <None Include="packages.config" />
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -220,7 +302,14 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+<<<<<<< HEAD
     </Compile>
+=======
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Repositories\OpenAiRepository.cs" />
+    <Compile Include="Repositories\SettingsRepository.cs" />
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -233,6 +322,27 @@
     <AppDesigner Include="Properties\" />
     <None Include="WordAddInTest_TemporaryKey.pfx" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\MyRibbon.xml" />
+    <Content Include="Images\fa_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Resources\Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FinancialStatementAnalysisView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PromptSettingsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -241,10 +351,18 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
+<<<<<<< HEAD
     <ManifestKeyFile>WordAddInTest_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>AA2E636D440079C6389975B266CC7CFD938B7F76</ManifestCertificateThumbprint>
+=======
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8376EE44F84893D694914D8995123E50F9DD2FF5</ManifestCertificateThumbprint>
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

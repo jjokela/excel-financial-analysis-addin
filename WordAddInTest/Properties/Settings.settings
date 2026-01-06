@@ -1,7 +1,27 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles>
     <Profile Name="(Default)" />
   </Profiles>
   <Settings />
 </SettingsFile>
+=======
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WordAddInTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PromptTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">You are an expert financial analyst.
+Analyze the following income statement data:
+&lt;&lt;DATA&gt;&gt;
+What are some key insights and trends from this data?</Value>
+    </Setting>
+    <Setting Name="ModelName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gpt-3.5-turbo</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1

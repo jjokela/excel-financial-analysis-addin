@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿namespace WordAddInTest.Controls
+=======
+﻿using WordAddInTest.Views;
+
+namespace WordAddInTest.Controls
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
 {
     partial class WinFormsContainer
     {
@@ -29,7 +35,11 @@
         private void InitializeComponent()
         {
             this.elementHost = new System.Windows.Forms.Integration.ElementHost();
+<<<<<<< HEAD
             this.testControl1 = new ExcelAddInTest.Views.FinancialStatementAnalysisView();
+=======
+            this.testControl1 = new WordAddInTest.Views.FinancialStatementAnalysisView();
+>>>>>>> 5e5e5b07d9d7e5d93fe2981851523286c5cd99e1
             this.SuspendLayout();
             // 
             // elementHost
