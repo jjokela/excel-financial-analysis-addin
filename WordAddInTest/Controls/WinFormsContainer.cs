@@ -8,8 +8,8 @@ namespace ExcelAddInTest.Controls
         public WinFormsContainer()
         {
             InitializeComponent();
-            var mainView = new MainView();
-            elementHost.Child = mainView;
+            var financialStatementAnalysisView = new FinancialStatementAnalysisView();
+            elementHost.Child = financialStatementAnalysisView;
         }
     }
 }

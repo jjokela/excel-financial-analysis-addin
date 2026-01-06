@@ -14,5 +14,8 @@ What are some key insights and trends from this data?</Value>
     <Setting Name="ModelName" Type="System.String" Scope="User">
       <Value Profile="(Default)">gpt-3.5-turbo</Value>
     </Setting>
+    <Setting Name="ImageSaveFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

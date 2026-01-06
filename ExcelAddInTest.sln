@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAddInTest", "ExcelAddInTest\ExcelAddInTest.csproj", "{D0E76BA3-1BDF-4496-BBB7-767A061EEECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAddInTest.Test", "ExcelAddInTest.Test\ExcelAddInTest.Test.csproj", "{28DB4ACD-7A09-4F49-9779-B77F77646CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelAddInTest.Test", "ExcelAddInTest.Test\ExcelAddInTest.Test.csproj", "{28DB4ACD-7A09-4F49-9779-B77F77646CCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

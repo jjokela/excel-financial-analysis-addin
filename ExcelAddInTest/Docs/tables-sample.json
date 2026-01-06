@@ -1,0 +1,185 @@
+[
+  {
+    "Type": "Table",
+    "Name": "Table1",
+    "Range": "$G$1:$I$194",
+    "HeaderRowRange": "$G$1:$I$1",
+    "DataBodyRange": "$G$2:$I$194",
+    "TotalsRowRange": "N/A",
+    "RowCount": 193,
+    "ColumnCount": 3,
+    "ShowHeaders": true,
+    "ShowTotals": false,
+    "ShowAutoFilter": true,
+    "HasActiveFilters": false,
+    "TableStyle": "TableStyleMedium3",
+    "Columns": [
+      {
+        "Name": "eka",
+        "Index": 1,
+        "Range": "$G$1:$G$194",
+        "DataBodyRange": "$G$2:$G$194"
+      },
+      {
+        "Name": "toka",
+        "Index": 2,
+        "Range": "$H$1:$H$194",
+        "DataBodyRange": "$H$2:$H$194"
+      },
+      {
+        "Name": "kolm",
+        "Index": 3,
+        "Range": "$I$1:$I$194",
+        "DataBodyRange": "$I$2:$I$194"
+      }
+    ],
+    "FilterCriteria": [
+      {
+        "ColumnIndex": 1,
+        "ColumnName": "eka",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 2,
+        "ColumnName": "toka",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 3,
+        "ColumnName": "kolm",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      }
+    ]
+  },
+  {
+    "Type": "Table",
+    "Name": "Table2",
+    "Range": "$L$3:$N$6",
+    "HeaderRowRange": "$L$3:$N$3",
+    "DataBodyRange": "$L$4:$N$6",
+    "TotalsRowRange": "N/A",
+    "RowCount": 3,
+    "ColumnCount": 3,
+    "ShowHeaders": true,
+    "ShowTotals": false,
+    "ShowAutoFilter": true,
+    "HasActiveFilters": false,
+    "TableStyle": "TableStyleMedium5",
+    "Columns": [
+      {
+        "Name": "Column1",
+        "Index": 1,
+        "Range": "$L$3:$L$6",
+        "DataBodyRange": "$L$4:$L$6"
+      },
+      {
+        "Name": "Column2",
+        "Index": 2,
+        "Range": "$M$3:$M$6",
+        "DataBodyRange": "$M$4:$M$6"
+      },
+      {
+        "Name": "Column3",
+        "Index": 3,
+        "Range": "$N$3:$N$6",
+        "DataBodyRange": "$N$4:$N$6"
+      }
+    ],
+    "FilterCriteria": [
+      {
+        "ColumnIndex": 1,
+        "ColumnName": "Column1",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 2,
+        "ColumnName": "Column2",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 3,
+        "ColumnName": "Column3",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      }
+    ]
+  },
+  {
+    "Type": "AutoFilter",
+    "Name": "AutoFilter Range",
+    "Range": "$B$4:$D$5",
+    "HeaderRowRange": "$B$4:$D$4",
+    "DataBodyRange": "$B$5:$D$5",
+    "TotalsRowRange": "N/A",
+    "RowCount": 1,
+    "ColumnCount": 3,
+    "ShowHeaders": true,
+    "ShowTotals": false,
+    "ShowAutoFilter": true,
+    "HasActiveFilters": false,
+    "TableStyle": "N/A",
+    "Columns": [
+      {
+        "Name": "a",
+        "Index": 1,
+        "Range": "$B$4:$B$5",
+        "DataBodyRange": "$B$5"
+      },
+      {
+        "Name": "b",
+        "Index": 2,
+        "Range": "$C$4:$C$5",
+        "DataBodyRange": "$C$5"
+      },
+      {
+        "Name": "c",
+        "Index": 3,
+        "Range": "$D$4:$D$5",
+        "DataBodyRange": "$D$5"
+      }
+    ],
+    "FilterCriteria": [
+      {
+        "ColumnIndex": 1,
+        "ColumnName": "a",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 2,
+        "ColumnName": "b",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      },
+      {
+        "ColumnIndex": 3,
+        "ColumnName": "c",
+        "IsActive": false,
+        "Criteria1": null,
+        "Criteria2": null,
+        "Operator": null
+      }
+    ]
+  }
+]

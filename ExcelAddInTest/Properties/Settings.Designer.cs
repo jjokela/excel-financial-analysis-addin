@@ -59,5 +59,17 @@ namespace ExcelAddInTest.Properties {
                 this["ModelName"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ImageSaveFolder {
+            get {
+                return ((string)(this["ImageSaveFolder"]));
+            }
+            set {
+                this["ImageSaveFolder"] = value;
+            }
+        }
     }
 }

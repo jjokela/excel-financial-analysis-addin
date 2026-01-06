@@ -273,6 +273,7 @@
     <Compile Include="Controls\Ribbon.Designer.cs">
       <DependentUpon>Ribbon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\WorksheetMetadata.cs" />
     <Compile Include="Repositories\OpenAiRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -314,11 +315,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Converters\ListToStringConverter.cs" />
+    <Compile Include="Models\ColumnInfo.cs" />
+    <Compile Include="Models\DataRegionInfo.cs" />
+    <Compile Include="Models\TableInfo.cs" />
     <Compile Include="ViewModels\FinancialStatementAnalysisViewModel.cs" />
     <Compile Include="ViewModels\PromptSettingsViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\WorksheetInfoViewModel.cs" />
     <Compile Include="Views\FinancialStatementAnalysisView.xaml.cs">
       <DependentUpon>FinancialStatementAnalysisView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WorksheetInfoView.xaml.cs">
+      <DependentUpon>WorksheetInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
@@ -340,6 +352,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PromptSettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WorksheetInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
